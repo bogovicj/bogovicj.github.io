@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 
+title: John Bogovic
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Thoughts on machine learning, computer vision, music.
@@ -28,9 +28,10 @@ twitter_username: BogovicJohn
 github_username:  bogovicj
 
 # Build settings
-theme: minima
+theme: null
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -51,3 +52,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+minima: 
+    social_links:
+        - { platform: github,           user_url: "https://github.com/bogovicj" }
+        - { platform: google_scholar,   user_url: "https://scholar.google.com/citations?user=edAulv0AAAAJ" }
+        - { platform: twitter,          user_url: "https://twitter.com/BogovicJohn" }
+            
+
